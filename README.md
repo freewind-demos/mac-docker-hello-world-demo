@@ -80,6 +80,8 @@ set -gx DOCKER_MACHINE_NAME "default";
 eval (docker-machine env default)
 ```
 
+最好把这句话加入到shell的启动脚本中，不然每次打开一个新的shell，都需要运行一遍，否则`docker`命令就会报错。
+
 运行Hello World
 -------------
 
