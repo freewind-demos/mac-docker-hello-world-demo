@@ -82,6 +82,12 @@ eval (docker-machine env default)
 
 最好把这句话加入到shell的启动脚本中，不然每次打开一个新的shell，都需要运行一遍，否则`docker`命令就会报错。
 
+注意：电脑重启后，需要运行手动启动docker machine:
+
+```
+docker-machine start default
+```
+
 运行Hello World
 -------------
 
